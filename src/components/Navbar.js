@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import SettingsBrightnessSharpIcon from "@mui/icons-material/SettingsBrightnessSharp";
 import MenuOpenSharpIcon from "@mui/icons-material/MenuOpenSharp";
 import Login from "./Login";
+import Signup from "./Signup";
 import Reg from "./Reg";
+
 
 import MenuSharpIcon from "@mui/icons-material/MenuSharp";
 export default function Navbar() {
@@ -16,7 +18,13 @@ export default function Navbar() {
   };
 
   const [showMyModal, setshowMyModal] = useState(false);
+  // const [showMyModalloginlogi
+  //   Sign_upal] = useState(false);
+  const [showMyModallogin, setshowMyModallogin] = useState(false);
   const handleClose = () => setshowMyModal(false);
+  const handleCloselogin = () => setshowMyModallogin(false);
+
+
   
   return (
     <>
@@ -93,20 +101,20 @@ export default function Navbar() {
               </button>
               <div className="relative ml-3">
                 <button
-                  className="bg-blue-500 px-3 py-2 text-sm font-medium rounded-md text-white"
-                  onClick={() => setshowMyModal(true)}
+                  className="bg-blue-500 px-3 py-1 md:py-2 text-sm font-medium rounded-md text-white"
+                  onClick={() => setshowMyModallogin(true)}
                 >
                   login
                 </button>
               </div>
-              {/* <div className="relative ml-3">
+              <div className="relative ml-3">
                 <button
-                  className="bg-blue-500 px-3 py-2 text-sm font-medium rounded-md text-white"
+                  className="bg-blue-500 px-3 py-1 md:py-2 text-sm font-medium rounded-md text-white"
                   onClick={() => setshowMyModal(true)}
                 >
                   Sign up
                 </button>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
@@ -151,7 +159,8 @@ export default function Navbar() {
        
         </div>
       </nav>
-      <Login onClose={handleClose} visible={showMyModal} />
+      <Login onClose={handleCloselogin} visible={showMyModallogin} />
+      <Signup onClose={handleClose} visible={showMyModal} />
       {/* <Log onClose={handleClose} visible={showMyModalReg} /> */}
     </>
   );

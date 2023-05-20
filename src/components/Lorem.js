@@ -9,10 +9,10 @@ export default function Lorem() {
       {/* first section  */}
       <div className=" relative grid grid-cols-1 md:grid-cols-3 bg-slate-300 h-auto md:h-[42rem]">
         <div className="">
-          <p className="bg-[#066aab]  w-64  h-10 text-bold text-xl text-white flex justify-end rounded-tr-2xl  mt-8  p-2">
+          <p className="bg-[#066aab]   w-64  h-12 text-bold text-xl text-white flex justify-end rounded-tr-2xl  mt-8 pr-11    p-2">
             GET great solution
           </p>
-          <div className=" md:text-start text-center md:w-[450px] w-full mt-10 ml-0  md:ml-24 ">
+          <div className=" md:text-start text-center lg:w-[450px] w-full mt-10 ml-0 md:ml-5 lg:ml-24 ">
             <h1 className="md:text-[40px] text-4xl font-bold text-[#040239]">
               <Typewriter
                 options={{
@@ -49,21 +49,21 @@ export default function Lorem() {
             </button>
           </div>
         </div>
-        <div className="   col-span-2 flex justify-end pb-10">
+        <div className="   col-span-2 flex justify-end md:w-[30rem] lg:w-full  lg:ml-0 md:ml-10 pb-10">
           {/* <MoveableImage/> */}
 
           <img src="h1.svg" className=" h-[40rem] mr-8" alt="" />
         </div>
       </div>
       <div>
-        <h1 className="text-4xl  font-semibold text-center mt-10">
+        <h1 className="md:text-4xl text-2xl font-semibold text-center mt-10">
           Transforming learnings and advancing careers in tech.
         </h1>
       </div>
       {/* first end section  */}
       {/* _____________________________________second part one girl img END__________________________________________ */}
 
-      <div className=" grid grid-cols-1 md:grid-cols-3 mt-12">
+      <div className=" grid grid-cols-1 lg:grid-cols-3 mt-12">
         <div className="flex col-span-2 justify-center mt-24">
           <div className="block md:flex ">
             <div className="md:ml-0 ml-12  border-2    w-72 h-72  bg-[#de5e18]  rounded-full">
@@ -85,7 +85,7 @@ export default function Lorem() {
             </div>
           </div>
         </div>
-        <div className="secound">
+        <div className="secound lg:block md:flex justify-center">
           <h1 className="mt-16 text-4xl font-bold md:text-start text-center p-4">
             Access top notch Tech Talent
           </h1>
@@ -112,7 +112,7 @@ export default function Lorem() {
       </p>
       <div className="flex justify-center md:p-10 p-6 ">
         <div className="grid grid-cols-1 md:grid-cols-2 bg-blue-400 rounded-tr-xl md:rounded-tr-[50%] md:rounded-bl-[50%] ">
-          <div className=" md:p-16 p-5">
+          <div className=" md:p-16   p-5">
             <h1 className="md:text-4xl text-2xl  p-0 md:p-5  ">
               advice given to students to help them make educational or personal
               decisions
@@ -125,7 +125,7 @@ export default function Lorem() {
           </div>
           <div className="">
             <div className="md:mt-64 mt-10 ">
-              <p className="text-2xl text-center md:text-start text-#de5e18">
+              <p className="text-2xl text-center md:text-start text-[#d8c3b7]">
                
                 Guidelines for acts and content that are prohibited
               </p>
@@ -169,9 +169,9 @@ export default function Lorem() {
       <div>
         <div className="text-3xl font-bold text-center mt-10">Our Vaules</div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3  text-center mt-10  ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  text-center mt-10  ">
           <div className="  m-auto  ">
-            <div className="w-80 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.8)]  md:ml-32 ml-0 p-2 ">
+            <div className="w-80 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.8)]  md:ml-10 lg:ml-32 ml-0 p-2 ">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRioQJUMTBxwm1mrtxo7zMhRIw_Bj9STxntig&usqp=CAU"
                 width="80%"
@@ -189,7 +189,7 @@ export default function Lorem() {
             </div>
           </div>
           <div className="  m-auto  my-20    ">
-            <div className="w-80 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.8)] p-2">
+            <div className="w-80 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.8)] p-2 ">
               <img
                 src="https://img.freepik.com/free-vector/business-vision-concept-illustration_114360-7130.jpg?w=360"
                 width="70%"
@@ -207,20 +207,19 @@ export default function Lorem() {
               </div>
             </div>
           </div>
-          <div className="  m-auto  ">
-            <div className="w-80 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.8)]   md:-ml-32 p-2 ">
+          <div className="  m-auto md:flex ">
+            <div className="w-80 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.8)] justify-center  lg:-ml-32 md:ml-64  p-2 ">
             <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIJyaq3rQHEesFi5VG28aM4_SFk7L_6p53WA&usqp=CAU"
                 width="70%"
                 className="m-auto"
               />
-              <div className="bg-white    p-8 rounded-lg ">
+              <div className="bg-white    p-8 rounded-lg  ">
                 <h1 className="text-2xl font-bold mt-4 md:mt-10 ">mision</h1>
                 <p>
                   We at Whiltor are committed to bring the best in our society
                   and to remove hesitation from our youth to start a new venture
-                  of thier own due lack of knowledge of a technology or
-                  resources. We are continously working to .
+                  of thier own due lack of                 resources. We are continously working to .
                 </p>
               </div>
             </div>

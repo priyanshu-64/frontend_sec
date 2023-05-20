@@ -11,6 +11,7 @@ import Top from "./components/Top";
 import Car from "./components/Car";
 import Bg from "./components/Bg";
 import Team from './components/Team';
+import Login_start from './components/Login_start';
 
 
 
@@ -29,7 +30,8 @@ function App() {
 <Top/>
 <Bg/>
 <Wave/>
-<Footer/>
+<Footer />
+<Login_start />
 </>
   );
 }
