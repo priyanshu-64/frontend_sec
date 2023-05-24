@@ -10,7 +10,7 @@ export default function Signup({ visible, onClose }) {
   return (
     <div>
       <div
-        className="flex inset-0 z-50 h-full bg-black/70 border-2 border-red-800  absolute justify-center "
+        className="flex inset-0 z-50 h-full bg-black/70   absolute justify-center "
         id="container"
         onClick={handleonCloselogin}
       >

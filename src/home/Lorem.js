@@ -1,15 +1,23 @@
 import React from "react";
 import PhoneForwardedIcon from "@mui/icons-material/PhoneForwarded";
-import TeacherCard from "./TeacherCard.js";
+import TeacherCard from "../components/TeacherCard.js";
 import Typewriter from "typewriter-effect";
 
+
 export default function Lorem() {
+      const firstscroll=()=>{
+        document.getElementById('firstcontainer').style="background-color:red;";
+      }
+
   return (
+
+
     <>
       {/* first section  */}
-      <div className=" relative grid grid-cols-1 md:grid-cols-3 bg-slate-300 h-auto md:h-[42rem]">
-        <div className="">
-          <p className="bg-[#066aab]   w-64  h-12 text-bold text-xl text-white flex justify-end rounded-tr-2xl  mt-8 pr-11    p-2">
+             
+      <div id="firstcontainer" className="  grid grid-cols-1 md:grid-cols-3 bg-slate-300 h-auto md:h-[42rem] " onScroll={firstscroll}>
+        <div className="mt-10">
+          <p className="bg-[#066aab]    w-64  h-12 text-bold text-xl text-white flex justify-end rounded-tr-2xl  mt-8 pr-11    p-2">
             GET great solution
           </p>
           <div className=" md:text-start text-center lg:w-[450px] w-full mt-10 ml-0 md:ml-5 lg:ml-24 ">
@@ -47,13 +55,18 @@ export default function Lorem() {
                 <PhoneForwardedIcon />
               </span>
             </button>
+            <div>
+
+            </div>
           </div>
+            
         </div>
-        <div className="   col-span-2 flex justify-end md:w-[30rem] lg:w-full  lg:ml-0 md:ml-10 pb-10">
+        <div className="mt-10   col-span-2 flex justify-end md:w-[30rem] lg:w-full  lg:ml-0 md:ml-10 pb-10">
           {/* <MoveableImage/> */}
 
           <img src="h1.svg" className=" h-[40rem] mr-8" alt="" />
         </div>
+      
       </div>
       <div>
         <h1 className="md:text-4xl text-2xl font-semibold text-center mt-10">

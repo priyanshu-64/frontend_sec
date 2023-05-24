@@ -5,7 +5,7 @@ function Bg() {
   const [subscribed, setSubscribed] = useState(false)
 
   return (
-    <div className="bg-gradient-to-tr from-blue-900 to-purple-400 relative h-screen w-screen relative ">
+    <div className="bg-gradient-to-tr from-blue-900 to-purple-400 relative h-screen w-screen  ">
       <div className='bg-fixed'>
       <img className="absolute inset-0 w-full h-full object-cover bg-cover mix-blend-multiply filter brightness-50"
         alt="main background image"
@@ -20,7 +20,7 @@ function Bg() {
         ) : (
           <div className="space-y-8">
             <h1 className="font-primary font-extrabold text-white text-3xl sm:text-4xl md:text-5xl md:leading-tight">
-              Easily capture emails on {' '}
+              Easily capture emails on
               <span className="text-palette-primary">
                 Notion.
               </span>

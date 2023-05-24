@@ -4,10 +4,16 @@ import MenuOpenSharpIcon from "@mui/icons-material/MenuOpenSharp";
 import Login from "./Login";
 import Signup from "./Signup";
 import Reg from "./Reg";
+import Search from "../home/Search";
+// import {Link} from "react-router-dom";
+
+
 
 
 import MenuSharpIcon from "@mui/icons-material/MenuSharp";
 export default function Navbar() {
+//  const [navbar,setnavbar]=useState("")
+
   const openmobile = () => {
     let icon = document.getElementById("mobile_menu");
     if (icon.style.marginTop == "-100%") {
@@ -28,8 +34,8 @@ export default function Navbar() {
   
   return (
     <>
-      <nav className="bg-[#040239] h-16 static">
-        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <nav className="fixed z-50     w-full">
+        <div className=" w-full bg-[#040239]    px-2 sm:px-6 lg:px-8  ">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
               {/* <!-- Mobile menu button--> */}
@@ -44,10 +50,10 @@ export default function Navbar() {
                 <MenuSharpIcon className="" />
               </button>
             </div>
-            <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div className="flex flex-1 items-center  sm:items-stretch justify-start">
               <div className="flexflex-shrink-0 items-center">
                 <img
-                  className="block h-10 w-auto lg:hidden md:mt-6 sm:mt-4"
+                  className="block h-10 md:w-auto w-24  lg:hidden md:mt-6  sm:mt-4"
                   src="https://cybrom.com/wp-content/uploads/2023/04/Logo-for-website-1.png"
                   alt="Cybrom"
                 />
@@ -97,8 +103,9 @@ export default function Navbar() {
                 type="button"
                 className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
               >
-                <SettingsBrightnessSharpIcon />
+                {/* <SettingsBrightnessSharpIcon /> */}
               </button>
+              <Search/>
               <div className="relative ml-3">
                 <button
                   className="bg-blue-500 px-3 py-1 md:py-2 text-sm font-medium rounded-md text-white"
@@ -106,15 +113,16 @@ export default function Navbar() {
                 >
                   login
                 </button>
+                {/* <Link to="/Login">Login</Link> */}
               </div>
-              <div className="relative ml-3">
+              {/* <div className="relative ml-3">
                 <button
                   className="bg-blue-500 px-3 py-1 md:py-2 text-sm font-medium rounded-md text-white"
                   onClick={() => setshowMyModal(true)}
                 >
                   Sign up
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -1,3 +1,4 @@
+
 import React from "react";
 import CloseIcon from "@mui/icons-material/Close";
 
@@ -10,7 +11,7 @@ export default function Login({ visible, onClose }) {
   return (
     <>
       <div
-        className="flex inset-0 border-2 border-red-800 z-50 h-full  bg-black/75 absolute justify-center "
+        className="flex inset-0 border-2 border-red-800 z-50 h-full   bg-black/75 absolute justify-center "
         id="container"
         onClick={handleonClose}
       >
@@ -50,7 +51,7 @@ export default function Login({ visible, onClose }) {
                             id="email"
                             className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder="name@company.com"
-                            required=""
+                            required
                           />
                         </div>
                         <div>
@@ -66,7 +67,7 @@ export default function Login({ visible, onClose }) {
                             id="password"
                             placeholder="••••••••"
                             className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            required=""
+                            required
                           />
                         </div>
                         <div className="flex items-center justify-between">
@@ -103,7 +104,7 @@ export default function Login({ visible, onClose }) {
                           Sign up
                         </button>
                         <p className="text-sm font-midium  text-white ">
-                          Don’t have an account yet?{" "}
+                          Don’t have an account yet?
                           <a href="#" className="font-medium  hover:underline ">
                             register
                           </a>
